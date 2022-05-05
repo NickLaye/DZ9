@@ -1,22 +1,23 @@
 package com.company;
 
-public class Book {
-    private String name;
-    private int yearOfPublication;
-    private Author author;
+import java.lang.constant.Constable;
 
-    public Book(String name, int yearOfPublication, Author author) {
-        this.name = name;
+public class Book {
+    private String nameOfBook;
+    private int yearOfPublication;
+    private Author fullName;
+
+    public Book(String nameOfBook, int yearOfPublication, Author fullName) {
+        this.nameOfBook = nameOfBook;
         this.yearOfPublication = yearOfPublication;
-        this.author = author;
+        this.fullName = fullName;
     }
-    public String getAuthorName() {
-        return this.authorName;
-    }
+    public Author getFullName() {return this.fullName;}
     public int getYearOfPublication() {
         return this.yearOfPublication;
     }
-    public Author getAuthor() {
-        return this.author;
-    }
+    public String  getNameOfBook() { return this.nameOfBook; }
+    public void setYearOfPublication (int yearOfPublication) {this.yearOfPublication = yearOfPublication;}
+
+
 }
