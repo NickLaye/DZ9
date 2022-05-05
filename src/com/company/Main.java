@@ -11,5 +11,8 @@ public class Main {
 
         System.out.println(book1.getFullName().getFullName());
 
+        book2.setYearOfPublication(2020);
+        System.out.println(book2.getYearOfPublication());
+
     }
 }
