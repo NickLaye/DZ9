@@ -1,11 +1,13 @@
 package com.company;
 
-import java.lang.constant.Constable;
+import java.util.Arrays;
+import java.util.Objects;
 
 public class Book {
     private String nameOfBook;
     private int yearOfPublication;
     private Author fullName;
+    private String[] hashCode;
 
     public Book(String nameOfBook, int yearOfPublication, Author fullName) {
         this.nameOfBook = nameOfBook;
@@ -29,20 +31,24 @@ public class Book {
         this.yearOfPublication = yearOfPublication;
     }
 
+    @Override
     public String toString() {
         return "Название книги: " + this.nameOfBook + " Автор книги: " + this.fullName + " Год публикации: " + this.yearOfPublication;
     }
 
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
+        Book book = null;
         if (o == null || getClass() != o.getClass()) {
-            Book book = (Book) o;
-            return yearOfPublication == book.yearOfPublication;
-        }
+        }book = (Book) o;
+        return yearOfPublication == book.yearOfPublication;
+
     }
 
+    @Override
     public int hashCode() {
-        return Book.hashCode(nameOfBook, fullName, yearOfPublication);
+        return Objects.hash(nameOfBook, fullName, yearOfPublication);
     }
 
 }
