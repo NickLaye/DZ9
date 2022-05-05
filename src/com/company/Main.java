@@ -6,8 +6,8 @@ public class Main {
 
         Author author1 = new Author("Сергей", "Тармашев");
         Book book1 = new Book("Древний", 2016, author1);
-       // Author author2 = new Author("Сергей", "Тармашев");
-       // Book book2 = new Book("Древний. Противостояние", 2017, author2);
+        Author author2 = new Author("Сергей", "Тармашев");
+        Book book2 = new Book("Древний. Противостояние", 2017, author2);
 
         System.out.println(book1.getFullName().getFullName());
 
