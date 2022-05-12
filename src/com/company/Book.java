@@ -41,7 +41,7 @@ public class Book {
         Book book = null;
         if (o == null || getClass() != o.getClass()) {
         book = (Book) o;}
-        return yearOfPublication == book.yearOfPublication && nameOfBook == book.nameOfBook;
+        return yearOfPublication == book.yearOfPublication && nameOfBook == book.nameOfBook && fullName == book.fullName;
 
     }
 

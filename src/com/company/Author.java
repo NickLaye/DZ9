@@ -44,7 +44,7 @@ public class Author {
         if (o == null || getClass() != o.getClass()) {
             author = (Author) o;
         }
-        return fullName == author.fullName;
+        return authorName == author.authorName && authorSurname == author.authorSurname;
     }
 
 }
