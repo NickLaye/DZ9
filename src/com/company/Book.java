@@ -37,10 +37,11 @@ public class Book {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        Book book = null;
+         if (this == o) return true;
+         Book book = null;
         if (o == null || getClass() != o.getClass()) {
-        book = (Book) o;}
+            book = (Book) o;
+        }
         return yearOfPublication == book.yearOfPublication && nameOfBook == book.nameOfBook && fullName == book.fullName;
 
     }
