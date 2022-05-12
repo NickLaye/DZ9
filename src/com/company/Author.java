@@ -44,7 +44,7 @@ public class Author {
         if (o == null || getClass() != o.getClass()) {
             author = (Author) o;
         }
-        return authorName == author.authorName && authorSurname == author.authorSurname;
+        return author.authorName.equals(this.authorName) && author.authorSurname.equals(this.authorSurname);
     }
 
 }
