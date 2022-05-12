@@ -9,7 +9,7 @@ public class Main {
         Author author2 = new Author("Сергей", "Тармашев");
         Book book2 = new Book("Древний. Противостояние", 2017, author2);
 
-        System.out.println(book1.getFullName().getFullName());
+        System.out.println(book1.getFullName());
 
         book2.setYearOfPublication(2020);
         System.out.println(book2.getYearOfPublication());

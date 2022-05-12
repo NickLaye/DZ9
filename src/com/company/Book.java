@@ -7,7 +7,6 @@ public class Book {
     private String nameOfBook;
     private int yearOfPublication;
     private Author fullName;
-    private String[] hashCode;
 
     public Book(String nameOfBook, int yearOfPublication, Author fullName) {
         this.nameOfBook = nameOfBook;
@@ -41,8 +40,8 @@ public class Book {
         if (this == o) return true;
         Book book = null;
         if (o == null || getClass() != o.getClass()) {
-        }book = (Book) o;
-        return yearOfPublication == book.yearOfPublication;
+        book = (Book) o;}
+        return yearOfPublication == book.yearOfPublication && nameOfBook == book.nameOfBook;
 
     }
 
