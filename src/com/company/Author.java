@@ -6,13 +6,13 @@ import java.util.Objects;
 public class Author {
     private String authorName;
     private String authorSurname;
-    private String fullName;
+
 
 
     public Author(String authorName, String authorSurname) {
         this.authorName = authorName;
         this.authorSurname = authorSurname;
-        this.fullName = authorName + " " + authorSurname;
+
     }
 
     public String getAuthorName() {
@@ -29,12 +29,12 @@ public class Author {
 
     @Override
     public String toString() {
-        return "ФИ автора: " + this.fullName;
+        return "Имя автора: " + this.authorName + "Фамилия автора: " + this.authorSurname;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(fullName);
+        return Objects.hash(authorName, authorSurname);
     }
 
     @Override
