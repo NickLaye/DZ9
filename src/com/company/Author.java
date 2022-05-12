@@ -40,10 +40,10 @@ public class Author {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        Author author = null;
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
+        Author author = (Author) o;
         return author.authorName.equals(this.authorName) && author.authorSurname.equals(this.authorSurname);
     }
 
