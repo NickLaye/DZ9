@@ -39,10 +39,10 @@ public class Book {
     public boolean equals(Object o) {
          if (this == o) return true;
          Book book = null;
-        if (o == null || getClass() != o.getClass())
-            book = (Book) o;
-
-            return book.nameOfBook.equals(this.nameOfBook) && book.yearOfPublication == yearOfPublication && book.fullName.equals(this.fullName);
+        if (o == null || getClass() != o.getClass()) {
+           return false;
+        }
+        return book.nameOfBook.equals(this.nameOfBook) && book.yearOfPublication == yearOfPublication && book.fullName.equals(this.fullName);
 
     }
 
