@@ -42,7 +42,7 @@ public class Author {
         if (this == o) return true;
         Author author = null;
         if (o == null || getClass() != o.getClass()) {
-            author = (Author) o;
+            return false;
         }
         return author.authorName.equals(this.authorName) && author.authorSurname.equals(this.authorSurname);
     }
